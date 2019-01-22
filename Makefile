@@ -1,9 +1,9 @@
-all: debug example
+all: bdb example
 clean:
-	-rm -f debug example
+	-rm -f bdb example
 
-debug: debug.c
-	gcc -Wall debug.c -o debug
+bdb: bdb.c
+	gcc -Wall bdb.c -o bdb
 
 example: example.c
 	gcc example.c -Og -g -o example
